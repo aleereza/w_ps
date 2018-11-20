@@ -1,0 +1,23 @@
+.container {
+  text-align: center;
+  overflow-x: hidden;
+  min-width: max-content;
+}
+
+/* .container:hover{
+  border-bottom: #002145 solid 3px;
+} */
+
+.link {
+  color: white;
+  padding: .5rem;
+  margin: 0;
+  font-size: 1.3rem;
+  overflow-x: hidden;
+  /* background-color: #002145; */
+  /* border: black solid 1px; */
+}
+
+/* .link:hover{
+  color: #002145;
+} */

@@ -7,7 +7,7 @@ class Content extends React.Component {
   render() {
 
     return (
-      <div>
+      <div className={styles.container}>
         {this.props.children}
       </div>
     )
