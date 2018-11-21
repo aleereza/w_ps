@@ -3,15 +3,15 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/Layout/Layout'
 
-class PublicationsPage extends React.Component {
+class TeachingPage extends React.Component {
   render () {
     return (
       <div>
-        <h1>Publications Page</h1>
+        <h1>Teaching Page</h1>
         <p>Welcome to your new Gatsby site.</p>
       </div>
     )
   }
 }
 
-export default PublicationsPage
+export default TeachingPage

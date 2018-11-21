@@ -10,8 +10,6 @@ import Footer from "../Footer/Footer"
 import NavLink from "./NavLink/NavLink"
 import MenuButton from "./MenuButton/MenuButton"
 
-
-
 class Layout extends React.Component {
 
   constructor(props) {
@@ -38,10 +36,11 @@ class Layout extends React.Component {
             <MenuButton state={!this.state.open}/>
           </div>
         </div>
-        <div className={container}>
+        <div className={container} onClick={() => this.ChangeNav()}>
 
             <NavLink to="/" name="Home"/>
             <NavLink to="/publications" name="Publications"/>
+            <NavLink to="/teaching" name="Teaching"/>
 
         </div>
         <Content>
