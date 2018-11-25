@@ -625,6 +625,19 @@ pre tt:after {
 
 /* ============================================================ */
 
+
+/* Colors:
+dark grey: #323232
+
+
+
+
+
+*/
+
+
+
+
 .sidenav_container{
   position: fixed;
   top: 0;
@@ -633,7 +646,7 @@ pre tt:after {
   width: 0;
   overflow: hidden;
   padding-top: 2rem;
-  background-color: black;
+  background-color: #323232;
   transition: width .5s;
 }
 
@@ -652,6 +665,24 @@ pre tt:after {
   position: relative;
   transition: 0.5s;
   height: 45px;
+}
+
+.profilepic {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  min-width: 200px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  color: blue;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (min-width: 600px) {
