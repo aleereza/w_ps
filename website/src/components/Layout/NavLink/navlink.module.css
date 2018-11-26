@@ -1,7 +1,8 @@
 .container {
-  text-align: center;
+  text-align: left;
   overflow-x: hidden;
   min-width: max-content;
+  padding:.5rem;
 }
 
 /* .container:hover{
@@ -16,6 +17,13 @@
   overflow-x: hidden;
   /* background-color: #002145; */
   /* border: black solid 1px; */
+}
+
+.icon{
+  height: 1rem;
+  width: 1rem;
+  margin: 0;
+  display: inline;
 }
 
 /* .link:hover{

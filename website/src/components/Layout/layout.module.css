@@ -628,6 +628,7 @@ pre tt:after {
 
 /* Colors:
 dark grey: #323232
+light grey: #969696
 
 
 
@@ -667,6 +668,16 @@ dark grey: #323232
   height: 45px;
 }
 
+
+/* === */
+.profile_section{
+  position: absolute;
+  top: 0;
+  width:100%;
+  padding:1rem;
+  min-width: 200px
+}
+
 .profilepic {
   display: block;
   margin: auto;
@@ -676,13 +687,64 @@ dark grey: #323232
   border-radius: 6px;
 }
 
-.icon {
-  width: 3rem;
-  height: 3rem;
-  background-color: white;
-  color: blue;
+.profile_name{
+  color: white;
   margin: 0;
   padding: 0;
+  text-align: center;
+}
+
+.profile_title{
+  color: #969696;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* === */
+.links_section{
+  padding-top: 400px;
+  padding-bottom: 80px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.links_section_2{
+  width: 200px;
+  margin: auto;
+  /* background-color: blue; */
+}
+/* === */
+.icons_section{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  padding:1rem;
+  text-align: center;
+  min-width: 200px;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #969696;
+  margin: 0;
+  padding: 0;
+}
+
+.icon:hover{
+  background-color: white;
+}
+
+.icon_anchor{
+  display: inline-block;
+  line-height: 0;
+}
+
+.email{
+  border: none;
+  padding: 0;
+  line-height: 0;
 }
 
 @media only screen and (min-width: 600px) {
