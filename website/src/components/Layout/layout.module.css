@@ -645,8 +645,8 @@ light grey: #969696
   left:0;
   height: 100%;
   width: 0;
-  overflow: hidden;
-  padding-top: 2rem;
+  overflow: auto;
+  /* padding-top: 2rem; */
   background-color: #323232;
   transition: width .5s;
 }
@@ -659,7 +659,7 @@ light grey: #969696
   position: absolute;
   bottom: 2px;
   left: 10px;
-  z-index: 2;
+  z-index: 10;
 }
 
 .navbar{
@@ -671,8 +671,7 @@ light grey: #969696
 
 /* === */
 .profile_section{
-  position: absolute;
-  top: 0;
+  position: relative;
   width:100%;
   padding:1rem;
   min-width: 200px
@@ -689,7 +688,10 @@ light grey: #969696
 
 .profile_name{
   color: white;
-  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-top: 0.5rem;
+  margin-bottom: .2rem;
   padding: 0;
   text-align: center;
 }
@@ -699,14 +701,15 @@ light grey: #969696
   margin: 0;
   padding: 0;
   text-align: center;
+  font-size: .7rem;
+  line-height: 1;
 }
 /* === */
 .links_section{
-  padding-top: 400px;
-  padding-bottom: 80px;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%)
+  /* top: 50%;
+  transform: translateY(-50%);
+  min-height: 400px; */
 }
 
 .links_section_2{
@@ -714,9 +717,27 @@ light grey: #969696
   margin: auto;
   /* background-color: blue; */
 }
+
+.cv_link{
+  color: #969696;
+  text-decoration: none;
+  margin-top: 1rem;
+  line-height: 1;
+  display: block;
+  min-width: 200px;
+  text-align: center;
+  padding: .5rem;
+  border: 1px solid #969696;
+  border-radius: 6px;
+}
+.cv_link:hover{
+  background-color: white;
+  color: #323232;
+  border-color: #323232;
+}
 /* === */
 .icons_section{
-  position: absolute;
+  position: relative;
   bottom: 0;
   width:100%;
   padding:1rem;
@@ -730,6 +751,9 @@ light grey: #969696
   background-color: #969696;
   margin: 0;
   padding: 0;
+  line-height: 1;
+  vertical-align: middle;
+  /* border: 2px solid #323232; */
 }
 
 .icon:hover{
@@ -738,13 +762,11 @@ light grey: #969696
 
 .icon_anchor{
   display: inline-block;
-  line-height: 0;
 }
 
 .email{
   border: none;
   padding: 0;
-  line-height: 0;
 }
 
 @media only screen and (min-width: 600px) {

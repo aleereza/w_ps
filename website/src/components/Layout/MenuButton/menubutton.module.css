@@ -1,7 +1,7 @@
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 6px;
-    background-color: #333;
+    background-color: #969696;
     margin: 6px 0;
     border-radius: 3px;
     transition: 0.2s;
@@ -20,6 +20,7 @@
 .close .bar1 {
     -webkit-transform: translate(0px, 12px) rotate(-45deg);
     transform: translate(0px, 12px) rotate(-45deg);
+    /* background-color: #969696; */
 }
 
 .close .bar2 {opacity: 0;}
@@ -27,4 +28,5 @@
 .close .bar3 {
     -webkit-transform: translate(0, -12px) rotate(45deg);
     transform: translate(0, -12px) rotate(45deg);
+    /* background-color: #969696; */
 }

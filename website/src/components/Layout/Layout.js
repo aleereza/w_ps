@@ -16,6 +16,12 @@ import envelope_icon from "../../icons/envelope.svg"
 import linkedin_icon from "../../icons/linkedin.svg"
 
 import home_icon from "../../icons/home.svg"
+import publications_icon from "../../icons/publications.svg"
+import teaching_icon from "../../icons/teaching.svg"
+import contact_icon from "../../icons/contact.svg"
+import students_icon from "../../icons/students.svg"
+
+import CV from "../../files/cv.pdf"
 
 class Layout extends React.Component {
 
@@ -55,15 +61,22 @@ class Layout extends React.Component {
             <div className={styles.profile_section}>
               <img className={styles.profilepic} src={profilepic} alt="Profile Picture"/>
               <p className={styles.profile_name}>Parvaneh Saeedi</p>
-              <p className={styles.profile_title}>Associate Professor, School of Engineering Science</p>
-
+              <p className={styles.profile_title}>Associate Professor</p>
+              <p className={styles.profile_title}>School of Engineering Science</p>
             </div>
 
             <div className={styles.links_section}>
               <div className={styles.links_section_2}>
                 <NavLink to="/" name="Home" icon={home_icon}/>
-                <NavLink to="/publications" name="Publications" icon={home_icon}/>
-                <NavLink to="/teaching" name="Teaching" icon={home_icon}/>
+                <NavLink to="/publications" name="Publications" icon={publications_icon}/>
+                <NavLink to="/research" name="Research" icon={home_icon}/>
+                <NavLink to="/teaching" name="Teaching" icon={teaching_icon}/>
+                <NavLink to="/students" name="Students" icon={students_icon}/>
+                <NavLink to="/contact" name="Contact" icon={contact_icon}/>
+
+                <a className={styles.cv_link} href={CV} download="Parvaneh_Saeedi_CV.pdf" target="_blank">
+                  Download CV
+                </a>
               </div>
             </div>
 
