@@ -10,8 +10,17 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-layout',
       options: {
-          component: require.resolve('./src/components/Layout/Layout')
-      }
+        component: require.resolve('./src/components/Layout/Layout'),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
     },
   ],
 }

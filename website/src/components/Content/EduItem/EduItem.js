@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './eduitem.module.css'
+import styles from './eduitem.module.scss'
 
 class EduItem extends React.Component {
   render() {

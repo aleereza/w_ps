@@ -1,17 +1,23 @@
+@import '../../../style/global.scss';
+
+$titletop: 1rem;
+
 .container {
   position: relative;
+  margin-top: $titletop+.5rem;
 }
 
 .titlediv {
   position: absolute;
-  top: -1rem;
-  left: 1rem;
+  top: -$titletop;
+  left: .5rem;
 }
 
 .title {
   position: relative;
-  background-color: white;
-  padding: 0.5rem;
+  background-color:$sfured;
+  color: white;
+  padding: 0 0.5rem 0 .5rem;
   z-index: 4;
 }
 
@@ -35,12 +41,22 @@
 }
 .maindiv {
   position: relative;
-  max-width: 300px;
+  max-width: 400px;
 }
 .main {
   position: relative;
-  background-color: #ffc;
-  padding: 2rem;
+  background-color: $lightaccent;
+  padding: 0.5rem;
+  padding-top: 1rem;
   text-align: left;
   z-index: 2;
+}
+.degree {
+  margin: 0;
+  line-height:1;
+}
+.school {
+  margin: 0;
+  font-size: .8rem;
+  line-height: 1.2;
 }
