@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './layout.module.css'
+import styles from './layout.module.scss'
 
 import cx from 'classnames'
 
@@ -54,7 +54,7 @@ class Layout extends React.Component {
             <MenuButton state={!this.state.open} />
           </div>
         </div>
-        <div className={container} onClick={() => this.ChangeNav()}>
+        <div className={container}>
           <div className={styles.profile_section}>
             <img
               className={styles.profilepic}

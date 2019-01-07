@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styles from './pages.module.scss'
 
 class StudentPage extends React.Component {
   render () {

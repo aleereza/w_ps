@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styles from './pages.module.css'
+import styles from './pages.module.scss'
 import EduItem from '../components/Content/EduItem/EduItem'
 
 const IndexPage = () => (

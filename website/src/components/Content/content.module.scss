@@ -1,3 +1,4 @@
+@import '../../style/global.scss';
 .container {
    /* padding: .5rem; */
 }
@@ -5,7 +6,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .container {
-    margin-left: 30%;
+    margin-left: $sidenav_container_width;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */

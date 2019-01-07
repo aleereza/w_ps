@@ -4,6 +4,7 @@ import PubItemGroup from '../components/Content/PubItem/PubItemGroup'
 import { graphql } from 'gatsby'
 import elasticlunr from 'elasticlunr'
 import SearchBar from '../components/Content/SearchBar/SearchBar'
+import styles from './pages.module.scss'
 
 class PublicationsPage extends React.Component {
   constructor(props) {
@@ -80,14 +81,16 @@ class PublicationsPage extends React.Component {
     if (this.state.query === '') {
       return (
         <div>
-          <SearchBar>
-            <input
-              type="text"
-              value={this.state.query}
-              onChange={this.search}
-              placeholder="Search..."
-            />
-          </SearchBar>
+          <div className={styles.publications_1}>
+            <SearchBar>
+              <input
+                type="text"
+                value={this.state.query}
+                onChange={this.search}
+                placeholder="Search..."
+              />
+            </SearchBar>
+          </div>
           <PubItemGroup year={'2018'} pubdata={publicationsdata_2018} />
 
           <PubItemGroup year={'2017'} pubdata={publicationsdata_2017} />

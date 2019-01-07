@@ -1,3 +1,4 @@
+@import '../style/global.scss';
 .page_title {
   /* color: red; */
 }
@@ -12,13 +13,18 @@
   padding: 0.5rem;
 }
 
+/* Index */
 .index_1 {
-  background-color: #f0f0f0;
+  background-color: $lightgrey;
 }
 
-/* Index */
 .index_2 {
   display: flex;
+}
+
+/* Puclications */
+.publications_1{
+  background-color: $lightgrey;
 }
 .eduitems {
   flex: 1 1 0;
