@@ -1,6 +1,7 @@
 @import '../style/global.scss';
 .page_title {
   /* color: red; */
+  margin-bottom: .5rem;
 }
 
 .index_1,
@@ -25,6 +26,9 @@
 /* Puclications */
 .publications_1{
   background-color: $lightgrey;
+}
+.results_container{
+  padding: 0 .5rem 0 .5rem;
 }
 .eduitems {
   flex: 1 1 0;

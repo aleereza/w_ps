@@ -1,0 +1,97 @@
+@import '../../../style/global.scss';
+
+/*
+for publications:
+red: #990000 #ffb3b3
+blue: #007399 #ccf2ff
+green: #1f7a1f #d6f5d6
+*/
+
+.container {
+  border-style: solid;
+  border-width: 0 0 0 7px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  background-color: $lightgrey;
+  box-shadow: 0px 3px 3px -3px #555;
+  border-radius: 2px;
+}
+
+.journalclass {
+  // border-color: #990000;
+  border-color: $jcolor;
+}
+.journalclass:hover {
+  background-color: $jcolorlight;
+}
+.journalclass .icon {
+  color: #990000;
+}
+
+.conferenceclass {
+  border-color: $ccolor;
+}
+.conferenceclass:hover {
+  background-color: $ccolorlight;
+}
+.conferenceclass .icon {
+  color: #007399;
+}
+
+.bookclass {
+  border-color: #1f7a1f;
+}
+.bookclass:hover {
+  background-color: #d6f5d6;
+}
+.bookclass .icon {
+  color: #1f7a1f;
+}
+
+.authors {
+  font-weight: 700;
+}
+
+.displaynone {
+  display: none;
+}
+
+.textcontainer {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 2rem;
+}
+
+.iconcontainer {
+  vertical-align: middle;
+  margin: 0;
+  background-color: $sfugrey;
+  width: 2rem;
+  height: 100%;
+  /* bottom: 0; */
+}
+
+.icon {
+  width: 1rem;
+  //height: 2rem;
+  //background-color: #969696;
+  margin: auto;
+  padding: 0;
+  //line-height: 1;
+  vertical-align: middle;
+  /* border: 2px solid #323232; */
+}
+
+.icon:hover {
+  background-color: white;
+}
+
+.icon_anchor {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+  //vertical-align:middle;
+  height: 100%;
+}

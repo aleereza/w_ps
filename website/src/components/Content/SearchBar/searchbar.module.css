@@ -1,7 +1,7 @@
 .searchcontainer{
-  width: 490px;
+  width: 50%;
   display: block;
-  margin: 1rem auto;
+  margin: .5rem auto 1rem auto;
 }
 
 .searchcontainer input{

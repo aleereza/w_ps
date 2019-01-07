@@ -1,5 +1,6 @@
+@import '../../../style/global.scss';
 .container{
-  background-color: #A6192E;
+  background-color: $sfublue;
   padding: .25rem;
 }
 .heading {

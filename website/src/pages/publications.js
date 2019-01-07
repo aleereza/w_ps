@@ -82,6 +82,7 @@ class PublicationsPage extends React.Component {
       return (
         <div>
           <div className={styles.publications_1}>
+            <h1 className={styles.page_title}>Publications</h1>
             <SearchBar>
               <input
                 type="text"
@@ -103,37 +104,37 @@ class PublicationsPage extends React.Component {
 
           <PubItemGroup year={'2013'} pubdata={publicationsdata_2013} />
 
-          <p>
-            For earlier publications, please refer to individual professor’s
-            webpage.
-          </p>
         </div>
       )
     } else {
       return (
         <div>
-          <SearchBar>
-            <input
-              type="text"
-              value={this.state.query}
-              onChange={this.search}
-            />
-          </SearchBar>
-
-          {this.state.results.map((r, i) => (
-            <PubItem
-              key={i}
-              authors={r.authors}
-              title={r.title}
-              reference={r.reference}
-              month={r.month}
-              year={r.year}
-              type={r.type}
-              link1={r.link1}
-              link2={r.link2}
-              link2_name={r.link2_name}
-            />
-          ))}
+          <div className={styles.publications_1}>
+            <h1 className={styles.page_title}>Publications</h1>
+            <SearchBar>
+              <input
+                type="text"
+                value={this.state.query}
+                onChange={this.search}
+              />
+            </SearchBar>
+          </div>
+          <div className={styles.results_container}>
+            {this.state.results.map((r, i) => (
+              <PubItem
+                key={i}
+                authors={r.authors}
+                title={r.title}
+                reference={r.reference}
+                month={r.month}
+                year={r.year}
+                type={r.type}
+                link1={r.link1}
+                link2={r.link2}
+                link2_name={r.link2_name}
+              />
+            ))}
+          </div>
         </div>
       )
     }

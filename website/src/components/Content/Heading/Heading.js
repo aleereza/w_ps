@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./heading.module.css"
+import styles from "./heading.module.scss"
 
 
 class Heading extends React.Component {
