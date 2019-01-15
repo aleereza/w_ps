@@ -17,12 +17,26 @@ const IndexPage = () => (
       </p>
     </div>
     <div className={styles.index_2}>
-      <div className={styles.research_section}>
-        <div className={styles.serearch_interests}>something</div>
-        <div className={styles.selected_pubs}>something</div>
+      <div className={styles.index_2_1}>
+        <h2 className={styles.heading2}>Research Interests</h2>
+        <h2 className={styles.heading2}>Selected Publications</h2>
       </div>
-      <div className={styles.edu_section}>
+      <div className={styles.index_2_2}>
+        <h2 className={styles.heading2}>Academic Positions</h2>
         <div className={styles.eduitems}>
+          <EduItem
+            title="2012-Present"
+            degree="Associate Professor"
+            school="Simon Fraser University"
+          />
+          <EduItem
+            title="2007-2012"
+            degree="Assistant Professor"
+            school="Simon Fraser University"
+          />
+        </div>
+        <h2 className={styles.heading2}>Education</h2>
+        <div className={styles.proitems}>
           <EduItem
             title="Ph.D"
             degree="Electrical and Computer Engineering"
@@ -37,18 +51,6 @@ const IndexPage = () => (
             title="B.Sc."
             degree="Electrical and Computer Engineering"
             school="Iran University of Science and Technology, 1990"
-          />
-        </div>
-        <div className={styles.proitems}>
-          <EduItem
-            title="2012-Present"
-            degree="Associate Professor"
-            school="Simon Fraser University"
-          />
-          <EduItem
-            title="2007-2012"
-            degree="Assistant Professor"
-            school="Simon Fraser University"
           />
         </div>
       </div>

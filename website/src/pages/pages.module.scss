@@ -1,11 +1,22 @@
 @import '../style/global.scss';
 .page_title {
-  /* color: red; */
-  margin-bottom: .5rem;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid silver;
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+.heading2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid silver;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .index_1,
-.index_2,
+.index_2_1,
+.index_2_2,
 .contact_1,
 .publications_1,
 .research_1,
@@ -22,17 +33,32 @@
 .index_2 {
   display: flex;
 }
+.index_2_1 {
+  flex: 3 1 0;
+  background-color: $lightblue;
+}
+.index_2_2 {
+  flex: 1 1 0;
+  background-color: $midgrey1;
+}
 
 /* Puclications */
-.publications_1{
+.publications_1 {
   background-color: $lightgrey;
 }
-.results_container{
-  padding: 0 .5rem 0 .5rem;
+.results_container {
+  padding: 0 0.5rem 0 0.5rem;
 }
-.eduitems {
-  flex: 1 1 0;
-}
-.proitems {
-  flex: 1 1 0;
+
+@media only screen and (min-width: $breakpoint1) {
+  .index_1,
+  .index_2_1,
+  .index_2_2,
+  .contact_1,
+  .publications_1,
+  .research_1,
+  .students_1,
+  .teaching_1 {
+    padding: 0.5rem 3rem 0.5rem 3rem;
+  }
 }
