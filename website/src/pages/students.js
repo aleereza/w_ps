@@ -18,9 +18,9 @@ class StudentPage extends React.Component {
         </div>
 
         <div className={styles.students_2}>
-          <StudentItemGroup title={'B.Sc. Students'} data={bsc_students} />
-          <StudentItemGroup title={'M.Sc. Students'} data={msc_students} />
           <StudentItemGroup title={'Ph.D. Students'} data={phd_students} />
+          <StudentItemGroup title={'M.Sc. Students'} data={msc_students} />
+          <StudentItemGroup title={'B.Sc. Students'} data={bsc_students} />
           <StudentItemGroup title={'Research Associates'} data={ra_students} />
         </div>
       </div>

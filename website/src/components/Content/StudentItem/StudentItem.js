@@ -11,14 +11,18 @@ class StudentItem extends React.Component {
 
     return (
       <div className={styles.container}>
-        <div className={styles.textcontainer}>
-          <span className={styles.name}>{this.props.name}</span>
-          <span>, </span>
-          <span className={styles.name}>{this.props.responsibility}</span>
-          <span>, </span>
-          <span className={styles.name}>{this.props.time} </span>
-          <span className={styles.name}>{this.props.research}. </span>
-          <span className={current_position_style}>{this.props.position}.</span>
+        <div className={styles.container_1}>
+          <p className={styles.name}>{this.props.name}</p>
+          <p className={styles.sub}>{this.props.time}</p>
+          <p className={styles.sub}>{this.props.responsibility}</p>
+        </div>
+        <div className={styles.container_2}>
+          <p className={styles.research}>
+            Thesis/Project: {this.props.research}
+          </p>
+          <p className={current_position_style}>
+            Current Position: {this.props.position}
+          </p>
         </div>
       </div>
     )
